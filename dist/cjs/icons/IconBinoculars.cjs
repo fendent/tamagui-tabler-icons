@@ -1,0 +1,69 @@
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+    for (var name in all) __defProp(target, name, {
+      get: all[name],
+      enumerable: !0
+    });
+  },
+  __copyProps = (to, from, except, desc) => {
+    if (from && typeof from == "object" || typeof from == "function") for (let key of __getOwnPropNames(from)) !__hasOwnProp.call(to, key) && key !== except && __defProp(to, key, {
+      get: () => from[key],
+      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+    });
+    return to;
+  };
+var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
+  value: !0
+}), mod);
+var IconBinoculars_exports = {};
+__export(IconBinoculars_exports, {
+  IconBinoculars: () => IconBinoculars
+});
+module.exports = __toCommonJS(IconBinoculars_exports);
+var import_react = require("react"),
+  import_react_native_svg = require("react-native-svg"),
+  import_helpers_icon = require("@tamagui/helpers-icon"),
+  import_jsx_runtime = require("react/jsx-runtime");
+const IconBinoculars = (0, import_helpers_icon.themed)((0, import_react.memo)(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */(0, import_jsx_runtime.jsxs)(import_react_native_svg.Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M4 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M14 16a3 3 0 1 0 6 0a3 3 0 1 0 -6 0",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M16.346 9.17l-.729 -1.261c-.16 -.248 -1.056 -.203 -1.117 .091l-.177 1.38",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M19.761 14.813l-2.84 -5.133c-.189 -.31 -.592 -.68 -1.421 -.68c-.828 0 -1.5 .448 -1.5 1v6",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M7.654 9.17l.729 -1.261c.16 -.249 1.056 -.203 1.117 .091l.177 1.38",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M4.239 14.813l2.84 -5.133c.189 -.31 .592 -.68 1.421 -.68c.828 0 1.5 .448 1.5 1v6",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M10 12h4v2h-4l0 -2",
+      stroke: color
+    })]
+  });
+}));

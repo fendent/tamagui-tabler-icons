@@ -1,0 +1,30 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconPlayerTrackPrev = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M21 5v14l-8 -7l8 -7",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M10 5v14l-8 -7l8 -7",
+      stroke: color
+    })]
+  });
+}));
+export { IconPlayerTrackPrev };

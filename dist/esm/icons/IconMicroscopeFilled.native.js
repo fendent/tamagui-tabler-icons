@@ -1,0 +1,22 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconMicroscopeFilled = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsx(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: color,
+    ...otherProps,
+    children: /* @__PURE__ */_jsx(Path, {
+      d: "M15.707 4.293l3 3a1 1 0 0 1 0 1.414l-1.553 1.555a7 7 0 0 1 -.256 9.74l2.102 -.002a1 1 0 0 1 0 2h-14a1 1 0 0 1 0 -2h1v-1a1 1 0 0 1 0 -2h2a1 1 0 0 1 0 2v1h4a5 5 0 0 0 3.737 -8.323l-3.03 3.03a1 1 0 0 1 -1.414 0l-.793 -.792l-.793 .792a1 1 0 1 1 -1.414 -1.414l.792 -.793l-.792 -.793a1 1 0 0 1 0 -1.414l6 -6a1 1 0 0 1 1.414 0m2 -2l3 3a1 1 0 1 1 -1.414 1.414l-3 -3a1 1 0 1 1 1.414 -1.414"
+    })
+  });
+}));
+export { IconMicroscopeFilled };

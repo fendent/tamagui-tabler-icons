@@ -1,0 +1,22 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconCoinFilled = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsx(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: color,
+    ...otherProps,
+    children: /* @__PURE__ */_jsx(Path, {
+      d: "M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336zm-5 2.66a1 1 0 0 0 -1 1a3 3 0 1 0 0 6v2a1.024 1.024 0 0 1 -.866 -.398l-.068 -.101a1 1 0 0 0 -1.732 .998a3 3 0 0 0 2.505 1.5h.161a1 1 0 0 0 .883 .994l.117 .007a1 1 0 0 0 1 -1l.176 -.005a3 3 0 0 0 -.176 -5.995v-2c.358 -.012 .671 .14 .866 .398l.068 .101a1 1 0 0 0 1.732 -.998a3 3 0 0 0 -2.505 -1.501h-.161a1 1 0 0 0 -1 -1zm1 7a1 1 0 0 1 0 2v-2zm-2 -4v2a1 1 0 0 1 0 -2z"
+    })
+  });
+}));
+export { IconCoinFilled };

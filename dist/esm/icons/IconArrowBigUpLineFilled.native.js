@@ -1,0 +1,24 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconArrowBigUpLineFilled = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: color,
+    ...otherProps,
+    children: [/* @__PURE__ */_jsx(Path, {
+      d: "M10.586 3l-6.586 6.586a2 2 0 0 0 -.434 2.18l.068 .145a2 2 0 0 0 1.78 1.089h2.586v5a1 1 0 0 0 1 1h6l.117 -.007a1 1 0 0 0 .883 -.993l-.001 -5h2.587a2 2 0 0 0 1.414 -3.414l-6.586 -6.586a2 2 0 0 0 -2.828 0z"
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M15 20a1 1 0 0 1 .117 1.993l-.117 .007h-6a1 1 0 0 1 -.117 -1.993l.117 -.007h6z"
+    })]
+  });
+}));
+export { IconArrowBigUpLineFilled };

@@ -1,0 +1,24 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconFileHorizontalFilled = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: color,
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M22 12l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007h-4l-.15 -.005a2 2 0 0 1 -1.844 -1.838l-.006 -.157v-4l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007h-9a3 3 0 0 0 -2.995 2.824l-.005 .176v10a3 3 0 0 0 2.824 2.995l.176 .005h14a3 3 0 0 0 2.995 -2.824l.005 -.176z"
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M17 5v4l4.001 .001z"
+    })]
+  });
+}));
+export { IconFileHorizontalFilled };

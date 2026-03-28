@@ -1,0 +1,36 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconMeat = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */_jsx(Path, {
+      d: "M13.62 8.382l1.966 -1.967a2 2 0 1 1 3.414 -1.415a2 2 0 1 1 -1.413 3.414l-1.82 1.821",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M5.904 18.596c2.733 2.734 5.9 4 7.07 2.829c1.172 -1.172 -.094 -4.338 -2.828 -7.071c-2.733 -2.734 -5.9 -4 -7.07 -2.829c-1.172 1.172 .094 4.338 2.828 7.071",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M7.5 16l1 1",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M12.975 21.425c3.905 -3.906 4.855 -9.288 2.121 -12.021c-2.733 -2.734 -8.115 -1.784 -12.02 2.121",
+      stroke: color
+    })]
+  });
+}));
+export { IconMeat };

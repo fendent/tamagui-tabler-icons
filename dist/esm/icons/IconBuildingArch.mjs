@@ -1,0 +1,33 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconBuildingArch = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M3 21l18 0",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M4 21v-15a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v15",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M9 21v-8a3 3 0 0 1 6 0v8",
+      stroke: color
+    })]
+  });
+}));
+export { IconBuildingArch };

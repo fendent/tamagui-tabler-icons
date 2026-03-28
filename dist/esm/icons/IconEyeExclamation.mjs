@@ -1,0 +1,36 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconEyeExclamation = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M15.03 17.478a8.797 8.797 0 0 1 -3.03 .522c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6a20.48 20.48 0 0 1 -.258 .419",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M19 16v3",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M19 22v.01",
+      stroke: color
+    })]
+  });
+}));
+export { IconEyeExclamation };

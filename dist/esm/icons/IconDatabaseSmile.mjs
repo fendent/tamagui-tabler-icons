@@ -1,0 +1,39 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconDatabaseSmile = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M10 14h.01",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M14 14h.01",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M10 17a3.5 3.5 0 0 0 4 0",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M4 6v12c0 1.657 3.582 3 8 3s8 -1.343 8 -3v-12",
+      stroke: color
+    })]
+  });
+}));
+export { IconDatabaseSmile };

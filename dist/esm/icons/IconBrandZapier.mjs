@@ -1,0 +1,48 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconBrandZapier = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M3 12h6",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M21 12h-6",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M12 3v6",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M12 15v6",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M5.636 5.636l4.243 4.243",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M18.364 18.364l-4.243 -4.243",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M18.364 5.636l-4.243 4.243",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M9.879 14.121l-4.243 4.243",
+      stroke: color
+    })]
+  });
+}));
+export { IconBrandZapier };

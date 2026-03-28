@@ -1,0 +1,33 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconOlympicTorch = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M8 9h8",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M9 9c1 4.364 1 7.636 1 12h4c0 -4.364 0 -7.636 1 -12",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M11 3c0 2.5 -1 2.66 -1 4a1.9 1.9 0 0 0 2 2a1.87 1.87 0 0 0 2 -2c0 -1.41 -1 -3 -3 -4",
+      stroke: color
+    })]
+  });
+}));
+export { IconOlympicTorch };

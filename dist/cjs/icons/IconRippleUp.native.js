@@ -1,0 +1,65 @@
+"use strict";
+
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+    for (var name in all) __defProp(target, name, {
+      get: all[name],
+      enumerable: !0
+    });
+  },
+  __copyProps = (to, from, except, desc) => {
+    if (from && typeof from == "object" || typeof from == "function") for (let key of __getOwnPropNames(from)) !__hasOwnProp.call(to, key) && key !== except && __defProp(to, key, {
+      get: () => from[key],
+      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+    });
+    return to;
+  };
+var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
+  value: !0
+}), mod);
+var IconRippleUp_exports = {};
+__export(IconRippleUp_exports, {
+  IconRippleUp: () => IconRippleUp
+});
+module.exports = __toCommonJS(IconRippleUp_exports);
+var import_jsx_runtime = require("react/jsx-runtime"),
+  import_react = require("react"),
+  import_react_native_svg = require("react-native-svg"),
+  import_helpers_icon = require("@tamagui/helpers-icon"),
+  IconRippleUp = (0, import_helpers_icon.themed)(/* @__PURE__ */(0, import_react.memo)(function (props) {
+    var {
+      color = "black",
+      size = 24,
+      ...otherProps
+    } = props;
+    return /* @__PURE__ */(0, import_jsx_runtime.jsxs)(import_react_native_svg.Svg, {
+      width: size,
+      height: size,
+      viewBox: "0 0 24 24",
+      fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+      ...otherProps,
+      children: [/* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M3 7q 4.5 -3 9 0t 9 0",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M3 17q 4.5 -3 9 0q .218 .144 .434 .275",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M3 12q 4.5 -3 9 0q 1.941 1.294 3.882 1.472",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M19 22v-6",
+      stroke: color
+    }), /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M22 19l-3 -3l-3 3",
+      stroke: color
+    })]
+    });
+  }));

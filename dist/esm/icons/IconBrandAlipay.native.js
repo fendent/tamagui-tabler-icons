@@ -1,0 +1,36 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconBrandAlipay = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */_jsx(Path, {
+      d: "M19 3h-14a2 2 0 0 0 -2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2v-14a2 2 0 0 0 -2 -2",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M7 7h10",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M12 3v7",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M21 17.314c-2.971 -1.923 -15 -8.779 -15 -1.864c0 1.716 1.52 2.55 2.985 2.55c3.512 0 6.814 -5.425 6.814 -8h-6.604",
+      stroke: color
+    })]
+  });
+}));
+export { IconBrandAlipay };

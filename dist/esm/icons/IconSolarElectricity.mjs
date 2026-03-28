@@ -1,0 +1,36 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconSolarElectricity = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M4 6.28v11.44a1 1 0 0 0 1.243 .97l6 -1.5a1 1 0 0 0 .757 -.97v-8.44a1 1 0 0 0 -.757 -.97l-6 -1.5a1 1 0 0 0 -1.243 .97",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M8 6v12",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M12 12h-8",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M20 7l-3 5h4l-3 5",
+      stroke: color
+    })]
+  });
+}));
+export { IconSolarElectricity };

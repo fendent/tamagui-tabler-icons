@@ -1,0 +1,46 @@
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+    for (var name in all) __defProp(target, name, {
+      get: all[name],
+      enumerable: !0
+    });
+  },
+  __copyProps = (to, from, except, desc) => {
+    if (from && typeof from == "object" || typeof from == "function") for (let key of __getOwnPropNames(from)) !__hasOwnProp.call(to, key) && key !== except && __defProp(to, key, {
+      get: () => from[key],
+      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+    });
+    return to;
+  };
+var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
+  value: !0
+}), mod);
+var IconPlaneTiltFilled_exports = {};
+__export(IconPlaneTiltFilled_exports, {
+  IconPlaneTiltFilled: () => IconPlaneTiltFilled
+});
+module.exports = __toCommonJS(IconPlaneTiltFilled_exports);
+var import_react = require("react"),
+  import_react_native_svg = require("react-native-svg"),
+  import_helpers_icon = require("@tamagui/helpers-icon"),
+  import_jsx_runtime = require("react/jsx-runtime");
+const IconPlaneTiltFilled = (0, import_helpers_icon.themed)((0, import_react.memo)(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: color,
+    ...otherProps,
+    children: /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M21.107 2.893a3.047 3.047 0 0 1 .012 4.302l-2.479 2.564l2.309 6.925a1 1 0 0 1 -.235 1.016l-2.5 2.55a1 1 0 0 1 -1.596 -.229l-2.864 -5.36l-1.754 1.753v2.586a1 1 0 0 1 -.293 .707l-2 2a1 1 0 0 1 -1.656 -.39l-1.341 -4.027l-4.025 -1.342a1 1 0 0 1 -.391 -1.656l2 -2a1 1 0 0 1 .706 -.292h2.586l1.757 -1.757l-5.317 -2.863a1 1 0 0 1 -.233 -1.587l2.5 -2.5a1 1 0 0 1 1.023 -.242l6.925 2.309l2.552 -2.467a3.05 3.05 0 0 1 4.314 0"
+    })
+  });
+}));

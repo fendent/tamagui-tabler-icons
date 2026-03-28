@@ -1,0 +1,46 @@
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+    for (var name in all) __defProp(target, name, {
+      get: all[name],
+      enumerable: !0
+    });
+  },
+  __copyProps = (to, from, except, desc) => {
+    if (from && typeof from == "object" || typeof from == "function") for (let key of __getOwnPropNames(from)) !__hasOwnProp.call(to, key) && key !== except && __defProp(to, key, {
+      get: () => from[key],
+      enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable
+    });
+    return to;
+  };
+var __toCommonJS = mod => __copyProps(__defProp({}, "__esModule", {
+  value: !0
+}), mod);
+var IconWritingSignFilled_exports = {};
+__export(IconWritingSignFilled_exports, {
+  IconWritingSignFilled: () => IconWritingSignFilled
+});
+module.exports = __toCommonJS(IconWritingSignFilled_exports);
+var import_react = require("react"),
+  import_react_native_svg = require("react-native-svg"),
+  import_helpers_icon = require("@tamagui/helpers-icon"),
+  import_jsx_runtime = require("react/jsx-runtime");
+const IconWritingSignFilled = (0, import_helpers_icon.themed)((0, import_react.memo)(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: color,
+    ...otherProps,
+    children: /* @__PURE__ */(0, import_jsx_runtime.jsx)(import_react_native_svg.Path, {
+      d: "M6 11c-.483 0 -1.021 .725 -1 1.983c.013 .783 .29 1.3 1.035 2.07l.107 .107l.101 -.134c.466 -.643 .714 -1.266 .752 -1.864l.005 -.162l-.003 -.563c-.017 -1.284 -.13 -1.422 -.807 -1.436zm12 -9c1.673 0 3 1.327 3 3v1h-6v-1c0 -1.673 1.327 -3 3 -3m2.707 15.707l-2 2l-.08 .071l-.043 .034l-.084 .054l-.103 .052l-.084 .032l-.08 .023l-.143 .023l-.071 .004h-2.519c-1.616 0 -2.954 -.83 -4.004 -2.393l-.026 -.04l-.273 .431l-.365 .557c-1.356 2.034 -2.942 1.691 -4.7 -.41l-.064 -.076l-.176 .147q -.897 .727 -2.045 1.438l-.332 .203a1 1 0 1 1 -1.03 -1.714a19 19 0 0 0 2.17 -1.498l.078 -.065l-.147 -.15c-.998 -1.033 -1.498 -1.904 -1.576 -3.157l-.01 -.256c-.038 -2.273 1.257 -4.017 3 -4.017c2.052 0 3 .948 3 4c0 1.218 -.47 2.392 -1.392 3.532l-.11 .13l.28 .36c.784 .985 .994 .992 1.343 .492l.047 -.069q .97 -1.456 1.437 -2.392a1 1 0 0 1 1.814 .053c.858 2.002 1.878 2.894 3.081 2.894l.085 -.001l-.292 -.292a1 1 0 0 1 -.293 -.707v-9h6v9a1 1 0 0 1 -.293 .707"
+    })
+  });
+}));

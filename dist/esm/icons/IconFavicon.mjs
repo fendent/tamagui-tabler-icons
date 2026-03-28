@@ -1,0 +1,36 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconFavicon = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M2 8a3 3 0 0 1 3 -3h14a3 3 0 0 1 3 3v8a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3l0 -8",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M6 10v4",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M11 10a2 2 0 1 0 0 4",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M14 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+      stroke: color
+    })]
+  });
+}));
+export { IconFavicon };

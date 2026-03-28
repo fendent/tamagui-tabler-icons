@@ -1,0 +1,42 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconLogicXnor = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */_jsx(Path, {
+      d: "M22 12h-2",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M2 9h4",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M2 15h4",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M5 19c1.778 -4.667 1.778 -9.333 0 -14",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M8 5c10.667 2.1 10.667 12.6 0 14c1.806 -4.667 1.806 -9.333 0 -14",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M16 12a2 2 0 1 0 4 0a2 2 0 1 0 -4 0",
+      stroke: color
+    })]
+  });
+}));
+export { IconLogicXnor };

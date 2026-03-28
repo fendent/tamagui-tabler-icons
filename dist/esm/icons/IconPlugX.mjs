@@ -1,0 +1,42 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconPlugX = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M13.55 17.733a5.806 5.806 0 0 1 -7.356 -4.052a5.81 5.81 0 0 1 1.537 -5.627l2.054 -2.054l7.165 7.165",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M4 20l3.5 -3.5",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M15 4l-3.5 3.5",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M20 9l-3.5 3.5",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M16 16l4 4",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M20 16l-4 4",
+      stroke: color
+    })]
+  });
+}));
+export { IconPlugX };

@@ -1,0 +1,39 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconCarrot = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */_jsx(Path, {
+      d: "M3 21s9.834 -3.489 12.684 -6.34a4.487 4.487 0 0 0 0 -6.344a4.483 4.483 0 0 0 -6.342 0c-2.86 2.861 -6.347 12.689 -6.347 12.689l.005 -.005",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M9 13l-1.5 -1.5",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M16 14l-2 -2",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M22 8s-1.14 -2 -3 -2c-1.406 0 -3 2 -3 2s1.14 2 3 2s3 -2 3 -2",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M16 2s-2 1.14 -2 3s2 3 2 3s2 -1.577 2 -3c0 -1.86 -2 -3 -2 -3",
+      stroke: color
+    })]
+  });
+}));
+export { IconCarrot };

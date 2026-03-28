@@ -1,0 +1,39 @@
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+import { jsx, jsxs } from "react/jsx-runtime";
+const IconBriefcaseOff = themed(memo(function (props) {
+  const {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */jsx(Path, {
+      d: "M11 7h8a2 2 0 0 1 2 2v8m-1.166 2.818a1.993 1.993 0 0 1 -.834 .182h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h2",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M8.185 4.158a2 2 0 0 1 1.815 -1.158h4a2 2 0 0 1 2 2v2",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M12 12v.01",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M3 13a20 20 0 0 0 11.905 1.928m3.263 -.763a20 20 0 0 0 2.832 -1.165",
+      stroke: color
+    }), /* @__PURE__ */jsx(Path, {
+      d: "M3 3l18 18",
+      stroke: color
+    })]
+  });
+}));
+export { IconBriefcaseOff };

@@ -1,0 +1,51 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconMiddleware = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */_jsx(Path, {
+      d: "M4 20l2.25 -2.25",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M20 20l-2.25 -2.25",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M20 4l-2.25 2.25",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M4 4l2.25 2.25",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M10 19.748a8.01 8.01 0 0 1 -5.747 -5.748",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M19.748 14a8.01 8.01 0 0 1 -5.748 5.748",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M4.252 10a8.02 8.02 0 0 1 5.478 -5.672l.27 -.075",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M14 4.252a8.01 8.01 0 0 1 5.748 5.749",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M11 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0",
+      stroke: color
+    })]
+  });
+}));
+export { IconMiddleware };

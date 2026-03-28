@@ -1,0 +1,42 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { memo } from "react";
+import { Svg, Path } from "react-native-svg";
+import { themed } from "@tamagui/helpers-icon";
+var IconChargingPile = themed(/* @__PURE__ */memo(function (props) {
+  var {
+    color = "black",
+    size = 24,
+    ...otherProps
+  } = props;
+  return /* @__PURE__ */_jsxs(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: color,
+    strokeWidth: "2",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    ...otherProps,
+    children: [/* @__PURE__ */_jsx(Path, {
+      d: "M18 7l-1 1",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0v-7l-3 -3",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M4 20v-14a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v14",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M9 11.5l-1.5 2.5h3l-1.5 2.5",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M3 20l12 0",
+      stroke: color
+    }), /* @__PURE__ */_jsx(Path, {
+      d: "M4 8l10 0",
+      stroke: color
+    })]
+  });
+}));
+export { IconChargingPile };
