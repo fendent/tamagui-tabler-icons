@@ -1,6 +1,11 @@
 {
   "name": "tamagui-tabler-icons",
-  "version": "0.1.0",
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fendent/tamagui-tabler-icons.git"
+  },
   "type": "module",
   "main": "dist/cjs",
   "module": "dist/esm/index.mjs",
@@ -10,11 +15,9 @@
     "dist"
   ],
   "sideEffects": false,
-  "dependencies": {
-    "@tamagui/core": "2.0.0-rc.32",
-    "@tamagui/helpers-icon": "2.0.0-rc.32"
-  },
   "peerDependencies": {
+    "@tamagui/core": ">=2.0.0-rc.0",
+    "@tamagui/helpers-icon": ">=2.0.0-rc.0",
     "react": ">=19",
     "react-native-svg": ">=12"
   },
